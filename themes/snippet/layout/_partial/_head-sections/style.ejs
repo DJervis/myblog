@@ -1,0 +1,20 @@
+<%
+    var _bootstrap = theme.bootstrap || '/css/bootstrap.min.css?rev=3.3.7';
+    var _fontAwe =  theme.fontAwesome || '/css/font-awesome.min.css?rev=4.5.0';
+    var _gitmentStyle = '//imsun.github.io/gitment/style/default.css';
+    var _highLight = 'https://cdn.bootcss.com/highlight.js/9.15.6/styles/solarized-light.min.css';
+    var style = '/css/style.css?rev=@@hash';
+%>
+
+<% if(theme.gitment.enable && is_post()){ %>
+    <%- css([_gitmentStyle]) %>
+<% } %>
+
+<% if(theme.highlightTheme) { %>
+    <%- css([_highLight]) %>
+<% } %>
+
+<%- css([_bootstrap, _fontAwe, style]) %>
+
+
+
