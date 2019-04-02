@@ -84,7 +84,7 @@ a img {
   outline: none;
 }
 .btn {
-  padding: 7px 14px;
+  /* padding: 7px 14px; */
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -460,13 +460,14 @@ pre {
   position: relative;
   margin-right: 15px;
   width: 220px;
-  height: 160px;
+  height: 180px;
   float: left;
   overflow: hidden;
 }
 .post .post-media img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .post .post-content .home-post-head {
   text-align: left;
@@ -492,13 +493,14 @@ pre {
   margin-top: 15px;
   padding-top: 15px;
   border-top: 1px solid #ebebeb;
+  overflow: hidden;
 }
 .post .post-footer .tag-list {
   color: #959595;
   line-height: 28px;
 }
 .post .post-footer .tag-list .post-meta {
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .post .post-footer .tag-list .post-meta .fa-wrap {
   margin-right: 10px;
@@ -843,6 +845,10 @@ pre {
   list-style: none;
 }
 .sidebar .widget ul li.archive-list-item {
+  width: 50%;
+  display: inline-block;
+}
+.sidebar .widget ul li.category-list-item {
   width: 50%;
   display: inline-block;
 }
@@ -1386,7 +1392,7 @@ pre {
   .post .post-media {
     float: none;
     width: 100%;
-    height: auto;
+    height: 15em;
     margin: 0 0 1em 0;
   }
   .post-footer,

@@ -6,13 +6,13 @@
 ## menu
 menu:
 - page: home
+  url: //www.djer.top
+  icon:
+- page: Blog
   url: /
   icon:
-- page: 前端
-  url: /categories/前端/
-  icon:
-- page: Demo
-  url: /categories/Demo/
+- page: Demos
+  url: //www.djer.top/demos
   icon:
 - page: 工具
   url: /categories/工具/
@@ -57,10 +57,7 @@ jsonContent:
     tags: false
 
 ## 网站公告设置
-notification: |-
-            <p>
-              文章发布了！！！
-            </p>
+notification: 
 
 ## 社交设置
 social:
@@ -103,7 +100,6 @@ tagcloud:
 
 ## 友链设置
 links:
-  - Hexo官网: https://hexo.io/zh-cn/
 
 
 # 主题自定义个性化配置
@@ -147,7 +143,7 @@ declaration:
   enable: true
   title: '转载声明'
   tip: |-
-      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Djer</a>
+      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">DJer</a>
 
 ## 文章打赏
 reward:
