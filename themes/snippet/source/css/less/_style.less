@@ -68,7 +68,7 @@ a {
     }
 }
 .btn {
-    padding: 7px 14px;
+    // padding: 7px 14px;
     .border-radius;
 }
 .btn-default {
@@ -146,6 +146,7 @@ textarea {
     }
 }
 blockquote {
+    font-size: 14px;
     border-left: 4px solid @theme_color;
     background-color: @greyish_color;
 }
@@ -205,8 +206,7 @@ pre {
     line-height: 0;
     height: 180px;
     width: 100%;
-    background:@white_color url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg);
-    background-repeat: repeat;
+    background:@white_color url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg) top center no-repeat;
     overflow: hidden;
     .banneriframe {
         width: 100%;
@@ -436,6 +436,7 @@ pre {
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
     .post-content{
@@ -464,11 +465,12 @@ pre {
         margin-top: 15px;
         padding-top: 15px;
         border-top: 1px solid #ebebeb;
+        overflow: hidden;
         .tag-list {
             color: @sepia_color;
             line-height: 28px;
             .post-meta {
-                margin-top: 5px;
+                // margin-top: 5px;
                 .fa-wrap {
                     margin-right: 10px;
                 }
@@ -609,6 +611,7 @@ pre {
         border-left: 3px solid @theme_color;
         padding-left: 12px;
         color: @black6_color;
+        font-size: 14px;
         a {
             color: @black6_color;
         }
@@ -648,7 +651,7 @@ pre {
         margin: 0;
         padding: 0;
     }
-    code {
+    /* code {
         color: @grey8_color;
         font-size: 0.96em;
         background-color: @greyish_color;
@@ -657,7 +660,7 @@ pre {
         .border-radius;
         font-family: @font_family_3;
         word-wrap: break-word;
-    }
+    } */
     tt {
         color: @grey8_color;
         font-size: 0.96em;
@@ -668,7 +671,7 @@ pre {
         font-family: @font_family_3;
         word-wrap: break-word;
     }
-    pre {
+    /* pre {
         margin: 1.64em 0;
         border: none;
         border-left: 3px solid #dadada;
@@ -690,6 +693,13 @@ pre {
             background: none;
             padding: 0;
         }
+    } */
+    pre {
+        border: none;
+        margin: 1.64em 0;
+        padding-left: 10px;
+        border-left: 3px solid #dadada;
+        background-color: #fdf6e3;
     }
     table {
         width: 100%;
@@ -1059,7 +1069,7 @@ pre {
     padding-top: 1em;
     background-color: @white_color;
     top: 0;
-    bottom: 70px;
+    bottom: 110px;
     overflow-y: auto;
     ol {
         list-style:none;
@@ -1152,7 +1162,7 @@ pre {
     highlight
 ====================================================*/
 
-@import "_highlight";
+// @import "_highlight";
 
 /*====================================================
     scrollbar
@@ -1216,9 +1226,13 @@ pre {
         }
         .post-media{
             float:none;
-            width:100%;
-            height: auto;
+            width: 100%;
+            max-height: 16em;
             margin: 0 0 1em 0;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
     .post-footer , #article-toc{
@@ -1250,6 +1264,7 @@ pre {
         blockquote {
             padding-left: 20px;
             border-width: 4px;
+            font-size: 14px;
             blockquote {
                 margin-left: 0;
             }

@@ -84,7 +84,6 @@ a img {
   outline: none;
 }
 .btn {
-  /* padding: 7px 14px; */
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -178,6 +177,7 @@ textarea:focus {
   outline: none;
 }
 blockquote {
+  font-size: 14px;
   border-left: 4px solid #e67e22;
   background-color: #f9f9f9;
 }
@@ -242,7 +242,6 @@ pre {
   height: 180px;
   width: 100%;
   background: #fff url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner.jpg) top center no-repeat;
-  background-repeat: repeat;
   overflow: hidden;
 }
 .main-header .banneriframe {
@@ -460,7 +459,7 @@ pre {
   position: relative;
   margin-right: 15px;
   width: 220px;
-  height: 180px;
+  height: 160px;
   float: left;
   overflow: hidden;
 }
@@ -499,9 +498,6 @@ pre {
   color: #959595;
   line-height: 28px;
 }
-.post .post-footer .tag-list .post-meta {
-  /* margin-top: 5px; */
-}
 .post .post-footer .tag-list .post-meta .fa-wrap {
   margin-right: 10px;
 }
@@ -523,6 +519,39 @@ pre {
 .post-content {
   font: 400 16px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
   color: #333;
+  /* code {
+        color: @grey8_color;
+        font-size: 0.96em;
+        background-color: @greyish_color;
+        padding: 1px 2px;
+        .border(#dadada);
+        .border-radius;
+        font-family: @font_family_3;
+        word-wrap: break-word;
+    } */
+  /* pre {
+        margin: 1.64em 0;
+        border: none;
+        border-left: 3px solid #dadada;
+        padding-left: 10px;
+        overflow: auto;
+        line-height: 1.5;
+        font-family: @font_family_3;
+        color: @grey8_color;
+        background-color: @greyish_color;
+        code {
+            color: @grey8_color;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+        tt {
+            color: @grey8_color;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+    } */
 }
 .post-content h1 {
   font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
@@ -634,6 +663,7 @@ pre {
   border-left: 3px solid #e67e22;
   padding-left: 12px;
   color: #666666;
+  font-size: 14px;
 }
 .post-content blockquote a {
   color: #666666;
@@ -673,11 +703,6 @@ pre {
   margin: 0;
   padding: 0;
 }
-.post-content pre {
-  padding-left: 10px;
-  background: #fdf6e3;
-}
-
 .post-content tt {
   color: #808080;
   font-size: 0.96em;
@@ -690,12 +715,12 @@ pre {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   word-wrap: break-word;
 }
-
-.post-content pre tt {
-  color: #808080;
+.post-content pre {
   border: none;
-  background: none;
-  padding: 0;
+  margin: 1.64em 0;
+  padding-left: 10px;
+  border-left: 3px solid #dadada;
+  background-color: #fdf6e3;
 }
 .post-content table {
   width: 100%;
@@ -845,10 +870,6 @@ pre {
   list-style: none;
 }
 .sidebar .widget ul li.archive-list-item {
-  width: 50%;
-  display: inline-block;
-}
-.sidebar .widget ul li.category-list-item {
   width: 50%;
   display: inline-block;
 }
@@ -1319,7 +1340,6 @@ pre {
 /*====================================================
     highlight
 ====================================================*/
-
 /*====================================================
     scrollbar
 ====================================================*/
@@ -1392,8 +1412,12 @@ pre {
   .post .post-media {
     float: none;
     width: 100%;
-    height: 15em;
+    max-height: 16em;
     margin: 0 0 1em 0;
+  }
+  .post .post-media img {
+    width: 100%;
+    object-fit: cover;
   }
   .post-footer,
   #article-toc {
@@ -1416,6 +1440,7 @@ pre {
   .post-content blockquote {
     padding-left: 20px;
     border-width: 4px;
+    font-size: 14px;
   }
   .post-content blockquote blockquote {
     margin-left: 0;

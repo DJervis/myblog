@@ -112,7 +112,7 @@ banner:
     img: http://snippet.shenliyang.com/img/banner.jpg
 
 ## 首页列表底部面板
-homePanel: true
+homePanel: false
 
 ## 缩略图自定义随机图片
 defaultImgs:
